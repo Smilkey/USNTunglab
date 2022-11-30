@@ -29,7 +29,7 @@ public class PopupDescription : MonoBehaviour
         //url = "http://127.0.0.1"
         Popup.SetActive(false);
 
-        //Assign Popup tagname text and measurement text
+        //Assign Popup tagname text and description text
         TagnameText = TMP_Tagname.GetComponent<TextMeshProUGUI>();
         DescriptionText = TMP_Description.GetComponent<TextMeshProUGUI>();
     }
@@ -43,7 +43,7 @@ public class PopupDescription : MonoBehaviour
         TagnameText.text = name;
         //Set the full url to php script
         url = phpURL + "?tagname=" + name + "&amount=1";
-        //Collect latest instrument measurement based on the name of the instrument
+        //Collect latest instrument description based on the name of the instrument
         DescriptionText.text = GetMeasurementFromDatabase();
     }
 
