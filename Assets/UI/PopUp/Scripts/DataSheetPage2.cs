@@ -3,34 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DataSheet : MonoBehaviour
+public class DataSheetPage2 : MonoBehaviour
 {
     //Declare variables
-    public GameObject imagePopup;
-    public RawImage IMG_Datasheet1;
+    public GameObject imagePopup2;
+    public RawImage IMG_Datasheet2;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        IMG_Datasheet1.enabled = false;
+        IMG_Datasheet2.enabled = false;
     }
 
     //Show image
     void OnTriggerEnter(Collider other)
     {
-        IMG_Datasheet1.enabled = true;
+        IMG_Datasheet2.enabled = true;
     }
 
     //Hide image
     void OnTriggerExit(Collider other)
     {
-        IMG_Datasheet1.enabled = false;
+        IMG_Datasheet2.enabled = false;
     }
-
-    // Update is called once per frame
-    //void Update()
-    //{
-        
-    //}
 }

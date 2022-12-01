@@ -3,34 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DataSheet : MonoBehaviour
+public class MerkeskiltMEgenPopup : MonoBehaviour
 {
     //Declare variables
-    public GameObject imagePopup;
-    public RawImage IMG_Datasheet1;
+    public GameObject merkeskiltMEgenPopup;
+    public RawImage imgMerkeskiltMEgen;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        IMG_Datasheet1.enabled = false;
+        imgMerkeskiltMEgen.enabled = false;
     }
 
     //Show image
     void OnTriggerEnter(Collider other)
     {
-        IMG_Datasheet1.enabled = true;
+        imgMerkeskiltMEgen.enabled = true;
     }
 
     //Hide image
     void OnTriggerExit(Collider other)
     {
-        IMG_Datasheet1.enabled = false;
+        imgMerkeskiltMEgen.enabled = false;
     }
-
-    // Update is called once per frame
-    //void Update()
-    //{
-        
-    //}
 }
